@@ -1,0 +1,12 @@
+<p><h1>Stocks</h1></p>
+<p><h2>Stock Portfolio</h2></p>
+
+<p>Add a new stock:</p>
+
+<form action="{% url 'stocks_project:new_stock' %}" method='post'>
+	{% csrf_token %}
+	{{ form.as_p }}
+	<button name="submit">Add Stock</button>
+</form>
+
+

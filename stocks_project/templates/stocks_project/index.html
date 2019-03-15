@@ -1,0 +1,32 @@
+<p><h1>Stocks</h1></p>
+<p><h2>{{investor.firstname}} {{investor.lastname}}'s Stock Portfolio</h2></p>
+
+<table style="width:60%" border=1>
+	<tr>
+		<th>Stock Symbol</th>
+		<th>Number of Shares</th>
+		<th>Purchase Price</th>
+		<th>Current Price</th>
+		<th>Date of Purchase</th>
+		
+	</tr>
+	
+	{% for stock in stocks %}
+		{% if stock.investorid == 1 %}
+		
+		<tr>
+			<td>{{stock.stocksymbol}}</td>
+			<td>{{stock.numshares}}</td>
+			<td>{{stock.purchaseprice}}</td>
+			<td>{{stock.currentprice}}</td>
+			<td>{{stock.datepurchased}}</td>
+		</tr>
+		{% endif %}
+	{% empty %}
+	<p>No dogs found</p>
+	{% endfor %}
+</table>
+
+<br>
+<a href="{% url 'stocks_project:new_stock' %}">Add a new stock:</a>
+</br>
