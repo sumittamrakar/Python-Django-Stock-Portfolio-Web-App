@@ -17,7 +17,7 @@ cd \stocks_venv\Scripts
 cd \stock_project
 > python ../manage.py runserver
 ```
-*3. Go to http://127.0.0.1:8000/ *
+*3. Go to http://127.0.0.1:8000/*
 
 *4. To add a new stock.*
 - Click on "Add a new stock:" button.
