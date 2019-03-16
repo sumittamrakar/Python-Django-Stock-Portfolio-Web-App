@@ -1,6 +1,6 @@
 # Stock Portfolio Web App
 
-A Django web app displays the list of stock information for an investor. The investor can add additional stock and its information to display in the stock portfolio.
+A Django web app that displays a list of stock information for an investor. The investor can add additional stock and its information to the stock portfolio.
 
 **Usage**
 
