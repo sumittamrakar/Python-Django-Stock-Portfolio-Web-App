@@ -24,3 +24,6 @@ cd \stock_project
 - Add stock information.
 - Select "Add Stock" button.
 - Observe the new stock in the stock portfolio.
+
+**Here is a demo for the stock portfolio web app:**
+![](stockPortfolioDemo.gif)
